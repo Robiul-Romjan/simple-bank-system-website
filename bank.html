@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balance</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header class="mt-12">
-        <h1 class="text-center text-5xl">Your all <span class="text-green-500 font-semibold">Deposite</span> , <span class="text-red-500 font-semibold">Withdraw </span>and main <span class="text-yellow-500 font-semibold">Balance</span> </h1>
+        <h1 class="text-center text-5xl">Your all <span class="text-green-500 font-semibold">Deposite</span> , <span
+                class="text-red-500 font-semibold">Withdraw </span>and main <span
+                class="text-yellow-500 font-semibold">Balance</span> </h1>
     </header>
     <main>
 
@@ -33,17 +38,50 @@
         <section class="mt-8 w-9/12 mx-auto mt-12 grid grid-cols-2 gap-4">
             <div class="bg-green-500 rounded-md px-4 py-12">
                 <h4 class="text-white text-center">Here, You can deposite your ammount</h4>
-                <input id="deposite-input" class="w-full my-4 p-2" type="number" name="" id="" placeholder="Enter ammount for deposite"><br>
-                <button id="deposite-btn" class="bg-red-500 hover:bg-red-600 px-8 py-2 font-semibold text-white rounded-md w-full">Deposite</button>
+                <input id="deposite-input" class="w-full my-4 p-2" type="number" name="" id=""
+                    placeholder="Enter ammount for deposite"><br>
+                <button id="deposite-btn"
+                    class="bg-red-500 hover:bg-red-600 px-8 py-2 font-semibold text-white rounded-md w-full">Deposite</button>
             </div>
             <div class="bg-red-500 rounded-md px-4 py-12">
                 <h4 class="text-white text-center">Here, You can witthdraw your ammount</h4>
-                <input id="withdraw-input" class="w-full my-4 p-2" type="number" name="" id="" placeholder="Enter ammount for deposite"><br>
-                <button id="withdraw-btn" class="bg-green-500 hover:bg-green-600 px-8 py-2 font-semibold text-white rounded-md w-full">Withdraw</button>
+                <input id="withdraw-input" class="w-full my-4 p-2" type="number" name="" id=""
+                    placeholder="Enter ammount for deposite"><br>
+                <button id="withdraw-btn"
+                    class="bg-green-500 hover:bg-green-600 px-8 py-2 font-semibold text-white rounded-md w-full">Withdraw</button>
             </div>
         </section>
 
+
+        <section class="mt-12 bg-gray-500 w-9/12 mx-auto p-8">
+            <h1 class="text-center text-5xl">My Text Editor</h1>
+            <div class="w-9/12 p-4 bg-gray-200 mx-auto mt-4 overflow">
+             <div class="flex justify-between">
+                <div class="flex">
+                    <h4 id="bold">B</h4>
+                    <h4 id="italic" class="px-4">I</h4>
+                    <h4 id="underline">U</h4>
+                </div>
+                <div class="flex">
+                    <h4 id="left">Left</h4>
+                    <h4 id="center" class="px-4">Center</h4>
+                    <h4 id="right">right</h4>
+                </div>
+                <div class="flex">
+                    <input id="font-size" class="w-12" type="number" max="100" min="0">
+                    <h4>size</h4>
+                    <input id="color" type="color" class="ml-4">
+                </div>
+             </div>
+             <p class="h-1 mt-3 bg-red-600"></p>
+            <textarea class="mt-4 p-3 w-full" name="" id="text-area" cols="30" rows="10"></textarea>
+            </div>
+            
+        </section>
+
     </main>
+    <script src="./js/utilitis.js"></script>
     <script src="./js/bank.js"></script>
 </body>
+
 </html>
